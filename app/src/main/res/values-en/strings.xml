@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Countries-Cities-Streets</string>
+    <string name="ok">ОК</string>
+    <string name="toast_message">
+        Country: %1$s;\n
+        City: %2$s;\n
+        House number: %3$s.
+    </string>
+    <string-array name="countries">
+        <item>Russia</item>
+        <item>Ukraine</item>
+        <item>Belorussia</item>
+    </string-array>
+    <string-array name="russian_cities">
+        <item>Moscow</item>
+        <item>Saint-Petersburg</item>
+        <item>Kazan</item>
+    </string-array>
+    <string-array name="ukrainian_cities">
+        <item>Kiev</item>
+        <item>Odessa</item>
+        <item>Kharkov</item>
+    </string-array>
+    <string-array name="belorussian_cities">
+        <item>Minsk</item>
+        <item>Gomel</item>
+        <item>Torzhok</item>
+    </string-array>
+</resources>
