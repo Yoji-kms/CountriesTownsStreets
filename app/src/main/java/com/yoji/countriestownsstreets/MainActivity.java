@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         countriesSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                String[] countries = getResources().getStringArray(R.array.countries);
+                getResources().getStringArray(R.array.countries);
                 initCitiesSpinnerAdapter(i);
             }
 
