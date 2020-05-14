@@ -12,10 +12,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    Spinner countriesSpinner;
-    Spinner citiesSpinner;
-    Spinner housesSpinner;
-    Button okButton;
+    private Spinner countriesSpinner;
+    private Spinner citiesSpinner;
+    private Spinner housesSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         countriesSpinner = findViewById(R.id.countriesSpinnerId);
         citiesSpinner = findViewById(R.id.citiesSpinnerId);
         housesSpinner = findViewById(R.id.housesSpinnerId);
-        okButton = findViewById(R.id.okButtonId);
+        Button okButton = findViewById(R.id.okButtonId);
 
         okButton.setOnClickListener(onClickListener);
     }
@@ -79,11 +78,11 @@ public class MainActivity extends AppCompatActivity {
             houseNumbers[i] = i + 1;
         }
 
-        ArrayAdapter<Integer> adapter = new ArrayAdapter<Integer>(this, android.R.layout.simple_spinner_item, houseNumbers);
+        ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, houseNumbers);
         housesSpinner.setAdapter(adapter);
     }
 
-    View.OnClickListener onClickListener = new View.OnClickListener() {
+    private View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             String toastMessage = getString(R.string.toast_message, countriesSpinner.getSelectedItem().toString(),
